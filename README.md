@@ -1,5 +1,7 @@
 # Portfolio Website
 
+🚧 **This website is still under construction** - Expected completion date: 2027
+
 Welcome to my portfolio website! This is a personal space where I showcase my projects, skills, and experience as a developer.
 
 ## 🌐 Live Demo
