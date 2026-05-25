@@ -2,6 +2,8 @@
 
 🚧 **This website is still under construction** - Expected completion date: 2027
 
+In the meantime, please visit my current portfolio at: **[www.betsy.fyi](https://www.betsy.fyi)**
+
 Welcome to my portfolio website! This is a personal space where I showcase my projects, skills, and experience as a developer.
 
 ## 🌐 Live Demo
