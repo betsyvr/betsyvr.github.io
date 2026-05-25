@@ -81,6 +81,7 @@ To test responsiveness and functionality:
 
 Feel free to reach out to me for collaboration, feedback, or inquiries:
 - **GitHub**: [@betsyvr](https://github.com/betsyvr)
+- **LinkedIn**: [Betsy Rohney](https://www.linkedin.com/in/betsyrohney)
 - **Portfolio**: [betsyvr.github.io](https://betsyvr.github.io)
 
 ## 📝 License
