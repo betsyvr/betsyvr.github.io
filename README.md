@@ -4,7 +4,7 @@
 
 In the meantime, please visit my current portfolio at: **[www.betsy.fyi](https://www.betsy.fyi)**
 
-Welcome to my portfolio website! This is a personal space where I showcase my projects, skills, and experience as a developer.
+Welcome to my portfolio website! This is a personal space where I showcase my projects, skills, and experience.
 
 ## 🌐 Live Demo
 
@@ -12,7 +12,7 @@ Visit my portfolio: [betsyvr.github.io](https://betsyvr.github.io)
 
 ## 📋 About
 
-This repository contains the source code for my portfolio website. It's a JavaScript-based project that highlights my work, skills, and journey as a developer.
+This repository contains the source code for my portfolio website. It's a JavaScript-based project that highlights my work and skills.
 
 ## ✨ Features
 
