@@ -240,40 +240,6 @@ section h2::after {
 }
 
 /* ============================================
-   Skills Section
-   ============================================ */
-
-.skills-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 2rem;
-}
-
-.skill-category {
-    border-left: 3px solid var(--primary-black);
-    padding-left: 1.5rem;
-}
-
-.skill-category h3 {
-    margin-bottom: 1rem;
-}
-
-.skill-list {
-    list-style: none;
-}
-
-.skill-list li {
-    padding: 0.5rem 0;
-    color: var(--medium-gray);
-}
-
-.skill-list li::before {
-    content: '•';
-    margin-right: 0.75rem;
-    font-weight: bold;
-}
-
-/* ============================================
    About Section
    ============================================ */
 
@@ -447,10 +413,6 @@ footer p {
     }
 
     .projects-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .skills-container {
         grid-template-columns: 1fr;
     }
 }
