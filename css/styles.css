@@ -1,7 +1,7 @@
 /* ============================================
    Modern & Sleek Portfolio Design
    Clean, minimalist with sophisticated interactions
-   Professional Purple with Lime-Green accents for visual pop
+   Professional Blue with Lime-Green accents for visual pop
    ============================================ */
 
 :root {
@@ -9,13 +9,13 @@
     --primary-color: #0f172a;
     --secondary-color: #1e293b;
     
-    /* Accent Colors - Professional Purple for main accent (WCAG AAA compliant) */
-    --accent-purple: #7c3aed;       /* Main purple - professional & eye-catching */
+    /* Accent Colors - Professional Blue for main accent (WCAG AAA compliant) */
+    --accent-purple: #67a1db;       /* Main blue - professional & eye-catching */
     --accent-purple-light: #ede9fe; /* Light purple for backgrounds */
-    --accent-purple-dark: #6d28d9;  /* Dark purple for hover states */
+    --accent-purple-dark: #4a7ba7;  /* Dark blue for hover states */
     
     /* Complementary Lime-Green for visual pop */
-    --accent-lime: #84cc16;
+    --accent-lime: #d9f76a;
     --accent-lime-light: #ecfdf5;
     
     /* Text Colors - High contrast for accessibility */
@@ -244,7 +244,7 @@ nav ul {
     right: -10%;
     width: 600px;
     height: 600px;
-    background: radial-gradient(circle, rgba(124, 58, 237, 0.08) 0%, transparent 70%);
+    background: radial-gradient(circle, rgba(103, 161, 219, 0.08) 0%, transparent 70%);
     border-radius: 50%;
     pointer-events: none;
 }
@@ -256,7 +256,7 @@ nav ul {
     left: 10%;
     width: 400px;
     height: 400px;
-    background: radial-gradient(circle, rgba(132, 204, 22, 0.06) 0%, transparent 70%);
+    background: radial-gradient(circle, rgba(217, 247, 106, 0.06) 0%, transparent 70%);
     border-radius: 50%;
     pointer-events: none;
 }
@@ -303,7 +303,7 @@ nav ul {
     background: var(--accent-purple-dark);
     border-color: var(--accent-purple-dark);
     transform: translateY(-2px);
-    box-shadow: 0 12px 28px -5px rgba(124, 58, 237, 0.3);
+    box-shadow: 0 12px 28px -5px rgba(103, 161, 219, 0.3);
 }
 
 .cta-button:focus-visible {
@@ -455,7 +455,7 @@ section h2::after {
 
 .project-card:hover {
     transform: translateY(-8px);
-    box-shadow: 0 16px 32px -5px rgba(124, 58, 237, 0.2);
+    box-shadow: 0 16px 32px -5px rgba(103, 161, 219, 0.2);
     border-color: var(--accent-purple);
 }
 
@@ -465,7 +465,7 @@ section h2::after {
 
 .project-card:focus-within {
     border-color: var(--accent-purple);
-    box-shadow: 0 0 0 3px rgba(124, 58, 237, 0.1);
+    box-shadow: 0 0 0 3px rgba(103, 161, 219, 0.1);
 }
 
 .project-card h3 {
@@ -527,7 +527,7 @@ section h2::after {
     right: -10%;
     width: 500px;
     height: 500px;
-    background: radial-gradient(circle, rgba(124, 58, 237, 0.1) 0%, transparent 70%);
+    background: radial-gradient(circle, rgba(103, 161, 219, 0.1) 0%, transparent 70%);
     border-radius: 50%;
     pointer-events: none;
 }
@@ -591,7 +591,7 @@ section h2::after {
     outline: none;
     background: rgba(255, 255, 255, 0.15);
     border-color: var(--accent-purple);
-    box-shadow: 0 0 0 3px rgba(124, 58, 237, 0.2);
+    box-shadow: 0 0 0 3px rgba(103, 161, 219, 0.2);
 }
 
 .submit-button {
@@ -610,7 +610,7 @@ section h2::after {
 
 .submit-button:hover {
     transform: translateY(-2px);
-    box-shadow: 0 12px 28px -5px rgba(124, 58, 237, 0.3);
+    box-shadow: 0 12px 28px -5px rgba(103, 161, 219, 0.3);
     background: linear-gradient(135deg, var(--accent-purple-dark), var(--accent-purple));
 }
 
@@ -656,7 +656,7 @@ footer {
 
 .social-links a:hover {
     transform: translateY(-4px);
-    box-shadow: 0 8px 16px rgba(124, 58, 237, 0.3);
+    box-shadow: 0 8px 16px rgba(103, 161, 219, 0.3);
 }
 
 .social-links a:focus-visible {
