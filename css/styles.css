@@ -26,6 +26,13 @@ html {
    Typography
    ============================================ */
 
+@font-face {
+    font-family: "Epilogue";
+    font-optical-sizing: auto;
+    font-weight: 400 700;
+    font-style: normal;
+}
+
 body {
     font-family: 'Epilogue', sans-serif;
     font-size: 16px;
@@ -35,7 +42,8 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: 'Epilogue', sans-serif;
+    font-family: "Epilogue", sans-serif;
+    font-optical-sizing: auto;
     font-weight: 600;
     line-height: 1.3;
     color: var(--primary-black);
@@ -43,16 +51,19 @@ h1, h2, h3, h4, h5, h6 {
 
 h1 {
     font-size: 3.5rem;
+    font-weight: 700;
 }
 
 h2 {
     font-size: 2.5rem;
     margin-bottom: 2rem;
+    font-weight: 700;
 }
 
 h3 {
     font-size: 1.75rem;
     margin-bottom: 1rem;
+    font-weight: 600;
 }
 
 p {
