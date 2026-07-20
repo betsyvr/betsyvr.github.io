@@ -1,7 +1,7 @@
 /* ============================================
    Modern & Sleek Portfolio Design
    Clean, minimalist with sophisticated interactions
-   Tangerine accents for visual pop with accessibility focus
+   Professional Purple with Lime-Green accents for visual pop
    ============================================ */
 
 :root {
@@ -9,14 +9,14 @@
     --primary-color: #0f172a;
     --secondary-color: #1e293b;
     
-    /* Accent Colors - Tangerine for visual pop (WCAG AA compliant with whites/lights) */
-    --accent-tangerine: #f97316;      /* Main tangerine - vibrant but accessible */
-    --accent-tangerine-light: #fed7aa; /* Light tangerine for backgrounds */
-    --accent-tangerine-dark: #c2410c;  /* Dark tangerine for hover states */
+    /* Accent Colors - Professional Purple for main accent (WCAG AAA compliant) */
+    --accent-purple: #7c3aed;       /* Main purple - professional & eye-catching */
+    --accent-purple-light: #ede9fe; /* Light purple for backgrounds */
+    --accent-purple-dark: #6d28d9;  /* Dark purple for hover states */
     
-    /* Complementary Blue for balance */
-    --accent-blue: #0ea5e9;
-    --accent-blue-light: #e0f2fe;
+    /* Complementary Lime-Green for visual pop */
+    --accent-lime: #84cc16;
+    --accent-lime-light: #ecfdf5;
     
     /* Text Colors - High contrast for accessibility */
     --text-primary: #0f172a;
@@ -69,7 +69,7 @@ body {
 
 /* Enhanced focus visible for keyboard navigation */
 *:focus-visible {
-    outline: 3px solid var(--accent-tangerine);
+    outline: 3px solid var(--accent-purple);
     outline-offset: 2px;
 }
 
@@ -135,7 +135,7 @@ p {
 }
 
 a {
-    color: var(--accent-tangerine);
+    color: var(--accent-purple);
     text-decoration: underline;
     text-decoration-thickness: 2px;
     text-underline-offset: 4px;
@@ -143,12 +143,12 @@ a {
 }
 
 a:hover {
-    color: var(--accent-tangerine-dark);
+    color: var(--accent-purple-dark);
     text-decoration-thickness: 3px;
 }
 
 a:focus-visible {
-    outline: 2px solid var(--accent-tangerine);
+    outline: 2px solid var(--accent-purple);
     outline-offset: 2px;
     border-radius: 2px;
 }
@@ -208,7 +208,7 @@ nav ul {
     left: 0;
     width: 0;
     height: 3px;
-    background: linear-gradient(90deg, var(--accent-tangerine), var(--accent-blue));
+    background: linear-gradient(90deg, var(--accent-purple), var(--accent-lime));
     border-radius: 2px;
     transition: var(--transition-fast);
 }
@@ -219,7 +219,7 @@ nav ul {
 }
 
 .nav-link:hover {
-    color: var(--accent-tangerine);
+    color: var(--accent-purple);
 }
 
 /* ============================================
@@ -244,7 +244,7 @@ nav ul {
     right: -10%;
     width: 600px;
     height: 600px;
-    background: radial-gradient(circle, rgba(249, 115, 22, 0.08) 0%, transparent 70%);
+    background: radial-gradient(circle, rgba(124, 58, 237, 0.08) 0%, transparent 70%);
     border-radius: 50%;
     pointer-events: none;
 }
@@ -256,7 +256,7 @@ nav ul {
     left: 10%;
     width: 400px;
     height: 400px;
-    background: radial-gradient(circle, rgba(14, 165, 233, 0.06) 0%, transparent 70%);
+    background: radial-gradient(circle, rgba(132, 204, 22, 0.06) 0%, transparent 70%);
     border-radius: 50%;
     pointer-events: none;
 }
@@ -270,7 +270,7 @@ nav ul {
 
 .hero h1 {
     margin-bottom: 1.5rem;
-    background: linear-gradient(135deg, var(--text-primary) 0%, var(--accent-tangerine) 100%);
+    background: linear-gradient(135deg, var(--text-primary) 0%, var(--accent-purple) 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -287,23 +287,23 @@ nav ul {
 .cta-button {
     display: inline-block;
     padding: 14px 36px;
-    background: var(--accent-tangerine);
+    background: var(--accent-purple);
     color: white;
     border-radius: 8px;
     font-weight: 700;
     font-size: 1rem;
     transition: var(--transition);
     box-shadow: var(--shadow-md);
-    border: 2px solid var(--accent-tangerine);
+    border: 2px solid var(--accent-purple);
     text-decoration: none;
     cursor: pointer;
 }
 
 .cta-button:hover {
-    background: var(--accent-tangerine-dark);
-    border-color: var(--accent-tangerine-dark);
+    background: var(--accent-purple-dark);
+    border-color: var(--accent-purple-dark);
     transform: translateY(-2px);
-    box-shadow: 0 12px 28px -5px rgba(249, 115, 22, 0.3);
+    box-shadow: 0 12px 28px -5px rgba(124, 58, 237, 0.3);
 }
 
 .cta-button:focus-visible {
@@ -352,7 +352,7 @@ section h2::after {
     transform: translateX(-50%);
     width: 60px;
     height: 4px;
-    background: linear-gradient(90deg, var(--accent-tangerine), var(--accent-blue));
+    background: linear-gradient(90deg, var(--accent-purple), var(--accent-lime));
     border-radius: 2px;
 }
 
@@ -374,7 +374,7 @@ section h2::after {
 }
 
 .about-text h3 {
-    color: var(--accent-tangerine);
+    color: var(--accent-purple);
     font-size: 1.1rem;
     text-transform: uppercase;
     letter-spacing: 0.1em;
@@ -391,7 +391,7 @@ section h2::after {
 .about-image {
     width: 100%;
     aspect-ratio: 1;
-    background: linear-gradient(135deg, var(--accent-tangerine) 0%, var(--accent-tangerine-dark) 50%, var(--accent-blue) 100%);
+    background: linear-gradient(135deg, var(--accent-purple) 0%, var(--accent-purple-dark) 50%, var(--accent-lime) 100%);
     border-radius: 16px;
     box-shadow: var(--shadow-xl);
     position: relative;
@@ -416,7 +416,7 @@ section h2::after {
    ============================================ */
 
 #projects {
-    background: linear-gradient(180deg, var(--bg-white) 0%, var(--accent-tangerine-light) 100%);
+    background: linear-gradient(180deg, var(--bg-white) 0%, var(--accent-purple-light) 100%);
 }
 
 .projects-grid {
@@ -447,7 +447,7 @@ section h2::after {
     left: 0;
     right: 0;
     height: 4px;
-    background: linear-gradient(90deg, var(--accent-tangerine), var(--accent-blue));
+    background: linear-gradient(90deg, var(--accent-purple), var(--accent-lime));
     transform: scaleX(0);
     transform-origin: left;
     transition: var(--transition);
@@ -455,8 +455,8 @@ section h2::after {
 
 .project-card:hover {
     transform: translateY(-8px);
-    box-shadow: 0 16px 32px -5px rgba(249, 115, 22, 0.2);
-    border-color: var(--accent-tangerine);
+    box-shadow: 0 16px 32px -5px rgba(124, 58, 237, 0.2);
+    border-color: var(--accent-purple);
 }
 
 .project-card:hover::before {
@@ -464,8 +464,8 @@ section h2::after {
 }
 
 .project-card:focus-within {
-    border-color: var(--accent-tangerine);
-    box-shadow: 0 0 0 3px rgba(249, 115, 22, 0.1);
+    border-color: var(--accent-purple);
+    box-shadow: 0 0 0 3px rgba(124, 58, 237, 0.1);
 }
 
 .project-card h3 {
@@ -475,7 +475,7 @@ section h2::after {
 }
 
 .project-card:hover h3 {
-    color: var(--accent-tangerine);
+    color: var(--accent-purple);
 }
 
 .project-card p {
@@ -490,7 +490,7 @@ section h2::after {
     align-items: center;
     gap: 0.5rem;
     width: fit-content;
-    color: var(--accent-tangerine);
+    color: var(--accent-purple);
     text-decoration: none;
     padding: 0.25rem;
 }
@@ -527,7 +527,7 @@ section h2::after {
     right: -10%;
     width: 500px;
     height: 500px;
-    background: radial-gradient(circle, rgba(249, 115, 22, 0.1) 0%, transparent 70%);
+    background: radial-gradient(circle, rgba(124, 58, 237, 0.1) 0%, transparent 70%);
     border-radius: 50%;
     pointer-events: none;
 }
@@ -538,7 +538,7 @@ section h2::after {
 }
 
 .contact-section h2::after {
-    background: linear-gradient(90deg, var(--accent-tangerine), var(--accent-blue));
+    background: linear-gradient(90deg, var(--accent-purple), var(--accent-lime));
 }
 
 .contact-section > p {
@@ -590,15 +590,15 @@ section h2::after {
 .form-group textarea:focus {
     outline: none;
     background: rgba(255, 255, 255, 0.15);
-    border-color: var(--accent-tangerine);
-    box-shadow: 0 0 0 3px rgba(249, 115, 22, 0.2);
+    border-color: var(--accent-purple);
+    box-shadow: 0 0 0 3px rgba(124, 58, 237, 0.2);
 }
 
 .submit-button {
-    background: linear-gradient(135deg, var(--accent-tangerine), var(--accent-tangerine-dark));
+    background: linear-gradient(135deg, var(--accent-purple), var(--accent-purple-dark));
     color: white;
     padding: 14px 40px;
-    border: 2px solid var(--accent-tangerine);
+    border: 2px solid var(--accent-purple);
     border-radius: 8px;
     font-weight: 700;
     font-size: 1rem;
@@ -610,8 +610,8 @@ section h2::after {
 
 .submit-button:hover {
     transform: translateY(-2px);
-    box-shadow: 0 12px 28px -5px rgba(249, 115, 22, 0.3);
-    background: linear-gradient(135deg, var(--accent-tangerine-dark), var(--accent-tangerine));
+    box-shadow: 0 12px 28px -5px rgba(124, 58, 237, 0.3);
+    background: linear-gradient(135deg, var(--accent-purple-dark), var(--accent-purple));
 }
 
 .submit-button:focus-visible {
@@ -645,7 +645,7 @@ footer {
     justify-content: center;
     width: 48px;
     height: 48px;
-    background: linear-gradient(135deg, var(--accent-tangerine), var(--accent-blue));
+    background: linear-gradient(135deg, var(--accent-purple), var(--accent-lime));
     border-radius: 50%;
     color: white;
     font-size: 1.2rem;
@@ -656,11 +656,11 @@ footer {
 
 .social-links a:hover {
     transform: translateY(-4px);
-    box-shadow: 0 8px 16px rgba(249, 115, 22, 0.3);
+    box-shadow: 0 8px 16px rgba(124, 58, 237, 0.3);
 }
 
 .social-links a:focus-visible {
-    outline: 2px solid var(--accent-tangerine);
+    outline: 2px solid var(--accent-purple);
     outline-offset: 2px;
 }
 
