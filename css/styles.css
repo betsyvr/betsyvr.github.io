@@ -1,7 +1,7 @@
 /* ============================================
    Modern & Sleek Portfolio Design
    Clean, minimalist with sophisticated interactions
-   Professional Blue with Lime-Green accents for visual pop
+   Professional Navy color scheme
    ============================================ */
 
 :root {
@@ -9,14 +9,14 @@
     --primary-color: #0f172a;
     --secondary-color: #1e293b;
     
-    /* Accent Colors - Professional Blue for main accent (WCAG AAA compliant) */
-    --accent-purple: #67a1db;       /* Main blue - professional & eye-catching */
-    --accent-purple-light: #ede9fe; /* Light purple for backgrounds */
-    --accent-purple-dark: #4a7ba7;  /* Dark blue for hover states */
+    /* Accent Colors - Professional Navy for main accent */
+    --accent-purple: #2c5aa0;       /* Main navy - professional & eye-catching */
+    --accent-purple-light: #e0e7ff; /* Light navy for backgrounds */
+    --accent-purple-dark: #1e3a5f;  /* Dark navy for hover states */
     
-    /* Complementary Lime-Green for visual pop */
-    --accent-lime: #d9f76a;
-    --accent-lime-light: #ecfdf5;
+    /* Complementary accent - using navy tones */
+    --accent-lime: #4f46e5;         /* Indigo accent */
+    --accent-lime-light: #eef2ff;
     
     /* Text Colors - High contrast for accessibility */
     --text-primary: #0f172a;
@@ -208,7 +208,7 @@ nav ul {
     left: 0;
     width: 0;
     height: 3px;
-    background: linear-gradient(90deg, var(--accent-purple), var(--accent-lime));
+    background: var(--accent-purple);
     border-radius: 2px;
     transition: var(--transition-fast);
 }
@@ -244,7 +244,7 @@ nav ul {
     right: -10%;
     width: 600px;
     height: 600px;
-    background: radial-gradient(circle, rgba(103, 161, 219, 0.08) 0%, transparent 70%);
+    background: radial-gradient(circle, rgba(44, 90, 160, 0.08) 0%, transparent 70%);
     border-radius: 50%;
     pointer-events: none;
 }
@@ -256,7 +256,7 @@ nav ul {
     left: 10%;
     width: 400px;
     height: 400px;
-    background: radial-gradient(circle, rgba(217, 247, 106, 0.06) 0%, transparent 70%);
+    background: radial-gradient(circle, rgba(79, 70, 229, 0.06) 0%, transparent 70%);
     border-radius: 50%;
     pointer-events: none;
 }
@@ -270,11 +270,7 @@ nav ul {
 
 .hero h1 {
     margin-bottom: 1.5rem;
-    background: linear-gradient(135deg, var(--text-primary) 0%, var(--accent-purple) 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.1));
+    color: var(--text-primary);
 }
 
 .hero-subtitle {
@@ -303,7 +299,7 @@ nav ul {
     background: var(--accent-purple-dark);
     border-color: var(--accent-purple-dark);
     transform: translateY(-2px);
-    box-shadow: 0 12px 28px -5px rgba(103, 161, 219, 0.3);
+    box-shadow: 0 12px 28px -5px rgba(44, 90, 160, 0.3);
 }
 
 .cta-button:focus-visible {
@@ -352,7 +348,7 @@ section h2::after {
     transform: translateX(-50%);
     width: 60px;
     height: 4px;
-    background: linear-gradient(90deg, var(--accent-purple), var(--accent-lime));
+    background: var(--accent-purple);
     border-radius: 2px;
 }
 
@@ -391,7 +387,7 @@ section h2::after {
 .about-image {
     width: 100%;
     aspect-ratio: 1;
-    background: linear-gradient(135deg, var(--accent-purple) 0%, var(--accent-purple-dark) 50%, var(--accent-lime) 100%);
+    background: var(--accent-purple);
     border-radius: 16px;
     box-shadow: var(--shadow-xl);
     position: relative;
@@ -447,7 +443,7 @@ section h2::after {
     left: 0;
     right: 0;
     height: 4px;
-    background: linear-gradient(90deg, var(--accent-purple), var(--accent-lime));
+    background: var(--accent-purple);
     transform: scaleX(0);
     transform-origin: left;
     transition: var(--transition);
@@ -455,7 +451,7 @@ section h2::after {
 
 .project-card:hover {
     transform: translateY(-8px);
-    box-shadow: 0 16px 32px -5px rgba(103, 161, 219, 0.2);
+    box-shadow: 0 16px 32px -5px rgba(44, 90, 160, 0.2);
     border-color: var(--accent-purple);
 }
 
@@ -465,7 +461,7 @@ section h2::after {
 
 .project-card:focus-within {
     border-color: var(--accent-purple);
-    box-shadow: 0 0 0 3px rgba(103, 161, 219, 0.1);
+    box-shadow: 0 0 0 3px rgba(44, 90, 160, 0.1);
 }
 
 .project-card h3 {
@@ -513,7 +509,7 @@ section h2::after {
    ============================================ */
 
 .contact-section {
-    background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+    background: var(--primary-color);
     color: var(--text-on-dark);
     text-align: center;
     position: relative;
@@ -527,7 +523,7 @@ section h2::after {
     right: -10%;
     width: 500px;
     height: 500px;
-    background: radial-gradient(circle, rgba(103, 161, 219, 0.1) 0%, transparent 70%);
+    background: radial-gradient(circle, rgba(44, 90, 160, 0.1) 0%, transparent 70%);
     border-radius: 50%;
     pointer-events: none;
 }
@@ -538,7 +534,7 @@ section h2::after {
 }
 
 .contact-section h2::after {
-    background: linear-gradient(90deg, var(--accent-purple), var(--accent-lime));
+    background: var(--accent-purple);
 }
 
 .contact-section > p {
@@ -591,11 +587,11 @@ section h2::after {
     outline: none;
     background: rgba(255, 255, 255, 0.15);
     border-color: var(--accent-purple);
-    box-shadow: 0 0 0 3px rgba(103, 161, 219, 0.2);
+    box-shadow: 0 0 0 3px rgba(44, 90, 160, 0.2);
 }
 
 .submit-button {
-    background: linear-gradient(135deg, var(--accent-purple), var(--accent-purple-dark));
+    background: var(--accent-purple);
     color: white;
     padding: 14px 40px;
     border: 2px solid var(--accent-purple);
@@ -610,8 +606,8 @@ section h2::after {
 
 .submit-button:hover {
     transform: translateY(-2px);
-    box-shadow: 0 12px 28px -5px rgba(103, 161, 219, 0.3);
-    background: linear-gradient(135deg, var(--accent-purple-dark), var(--accent-purple));
+    box-shadow: 0 12px 28px -5px rgba(44, 90, 160, 0.3);
+    background: var(--accent-purple-dark);
 }
 
 .submit-button:focus-visible {
@@ -645,7 +641,7 @@ footer {
     justify-content: center;
     width: 48px;
     height: 48px;
-    background: linear-gradient(135deg, var(--accent-purple), var(--accent-lime));
+    background: var(--accent-purple);
     border-radius: 50%;
     color: white;
     font-size: 1.2rem;
@@ -656,7 +652,8 @@ footer {
 
 .social-links a:hover {
     transform: translateY(-4px);
-    box-shadow: 0 8px 16px rgba(103, 161, 219, 0.3);
+    box-shadow: 0 8px 16px rgba(44, 90, 160, 0.3);
+    background: var(--accent-purple-dark);
 }
 
 .social-links a:focus-visible {
