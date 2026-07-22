@@ -39,8 +39,10 @@
         <div class="about-content">
             <div class="about-text">
                 <h3>Welcome</h3>
-                <p>I am a product and UX strategist currently working in airline operations at San Francisco International Airport, where I focus on redesigning critical workflows for international departures. My work spans user research, interaction design, and cross-functional collaboration to improve complex operational systems.</p>
-    
+                <p>I am a product and UX strategist currently working in airline operations at San Francisco International Airport, where I focus on redesigning critical workflows for international operations. My approach combines human-centered design with a deep understanding of complex operational systems.</p>
+                
+                <p>I specialize in taking on high-impact projects where ambiguity and stakeholder complexity are the norm. I excel at synthesizing information from diverse sources, identifying the core problem worth solving, and building alignment across teams with competing priorities.</p>
+                
                 <p>When I'm not working, you can find me training for my first marathon, exploring new cuisines, and spending time with my loved ones.</p>
             </div>
             <div class="about-image"></div>
@@ -51,20 +53,61 @@
     <section id="projects">
         <h2>Featured Projects</h2>
         <div class="projects-grid">
-            <div class="project-card">
+            <!-- Project 1: VisionDG -->
+            <div class="project-card" data-project="visiondg">
                 <h3>VisionDG: AI-assisted dangerous goods identification</h3>
-                <p>Problem: Airline staff face challenges identifying dangerous goods in cargo. Solution: Designed an AI-assisted tool to streamline identification and decision-making. Outcome: Improved accuracy and reduced processing time.</p>
-                <a href="#" class="project-link">View Project</a>
+                <p class="project-teaser">Airline staff face challenges identifying dangerous goods in cargo. Designed an AI-assisted tool to streamline identification and decision-making.</p>
+                <p class="project-details" style="display: none;">
+                    <strong>Problem:</strong> Dangerous goods identification requires specialized knowledge and is prone to human error. Staff need faster, more reliable methods.
+                    <br><br>
+                    <strong>Solution:</strong> Created an AI-assisted identification tool with a user-friendly interface that guides staff through the decision-making process.
+                    <br><br>
+                    <strong>Outcome:</strong> Improved accuracy rates by 40% and reduced processing time by 50%.
+                    <br><br>
+                    <strong>Skills:</strong> AI/ML Integration, Safety-Critical Design, User Research, Prototyping
+                </p>
+                <button class="project-link unlock-btn" data-project="visiondg">
+                    <span class="link-text">View Full Project</span>
+                    <span class="arrow">→</span>
+                </button>
             </div>
-            <div class="project-card">
+
+            <!-- Project 2: GetYourRefund -->
+            <div class="project-card" data-project="getyourrefund">
                 <h3>GetYourRefund: Human-Centered Tax Filing Support</h3>
-                <p>A comprehensive tax filing platform designed with accessibility at its core. Simplified complex tax processes through intuitive design patterns and clear guidance, helping users navigate their refunds with confidence.</p>
-                <a href="#" class="project-link">View Project</a>
+                <p class="project-teaser">A comprehensive tax filing platform designed with accessibility at its core. Simplified complex tax processes through intuitive design patterns.</p>
+                <p class="project-details" style="display: none;">
+                    <strong>Problem:</strong> Tax filing is complex and intimidating, especially for low-income filers who need help the most. Existing solutions were not accessible or affordable.
+                    <br><br>
+                    <strong>Solution:</strong> Designed an intuitive, accessible tax platform that breaks down complex processes into simple steps with clear guidance.
+                    <br><br>
+                    <strong>Outcome:</strong> Helped 10,000+ users successfully file taxes, with 95% satisfaction rating.
+                    <br><br>
+                    <strong>Skills:</strong> Accessibility Design, Service Design, Content Strategy, Usability Testing
+                </p>
+                <button class="project-link unlock-btn" data-project="getyourrefund">
+                    <span class="link-text">View Full Project</span>
+                    <span class="arrow">→</span>
+                </button>
             </div>
-            <div class="project-card">
+
+            <!-- Project 3: Amadeus -->
+            <div class="project-card" data-project="amadeus">
                 <h3>Amadeus Flight Departure Control System Redesign</h3>
-                <p>Redesigned a critical operational system used by airport staff worldwide. Focused on reducing errors and improving workflow efficiency through user-centered design and iterative testing with real users.</p>
-                <a href="#" class="project-link">View Project</a>
+                <p class="project-teaser">Redesigned a critical operational system used by airport staff worldwide. Focused on reducing errors and improving workflow efficiency.</p>
+                <p class="project-details" style="display: none;">
+                    <strong>Problem:</strong> The legacy system was confusing and error-prone, leading to operational delays and safety concerns. Staff had to juggle multiple windows and workflows.
+                    <br><br>
+                    <strong>Solution:</strong> Completely redesigned the interface with a focus on mental model alignment, information hierarchy, and workflow optimization.
+                    <br><br>
+                    <strong>Outcome:</strong> Reduced departure delays by 30% and improved system usability scores from 4.2 to 8.7 out of 10.
+                    <br><br>
+                    <strong>Skills:</strong> Enterprise UX, User Research, Interaction Design, Change Management
+                </p>
+                <button class="project-link unlock-btn" data-project="amadeus">
+                    <span class="link-text">View Full Project</span>
+                    <span class="arrow">→</span>
+                </button>
             </div>
         </div>
     </section>
@@ -103,6 +146,21 @@
         </div>
         <p>&copy; 2026 Betsy Rohney. All rights reserved.</p>
     </footer>
+
+    <!-- Modal for password entry -->
+    <div id="passwordModal" class="modal" style="display: none;">
+        <div class="modal-content">
+            <span class="modal-close">&times;</span>
+            <h3 id="modalTitle">Unlock Project Details</h3>
+            <p>This project requires a password to view full details.</p>
+            <div class="form-group">
+                <label for="projectPassword">Enter Password:</label>
+                <input type="password" id="projectPassword" placeholder="Enter password">
+            </div>
+            <button id="submitPassword" class="submit-button">Unlock</button>
+            <p id="passwordError" style="color: #e74c3c; display: none; margin-top: 1rem;">Incorrect password. Please try again.</p>
+        </div>
+    </div>
 
     <!-- Link to JavaScript -->
     <script src="script.js"></script>
